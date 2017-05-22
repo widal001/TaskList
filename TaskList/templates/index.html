@@ -3,6 +3,7 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>My Hello Web App Project</title>
 
         <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
@@ -16,9 +17,33 @@
         <!-- Latest compiled bootstrap JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+        <!-- imports main javascript file -->
+        <script src="main.js"></script>
+
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>I am a basic website.</p>
+        <div class="container">
+            <div class="row">
+                <div class="well col-sm-offset-4 col-sm-4">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" class="form-control" id="age" placeholder="23">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-offset-4 col-sm-4 well">
+                    <h4>Full Name</h3>
+                    <p>Age</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
