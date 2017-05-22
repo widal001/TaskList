@@ -1,9 +1,3 @@
 body {
-    margin: 150px;
-    background-image: url('https://static1.squarespace.com/static/55cbb6d4e4b0f9228ad80414/t/57bddbbbd1758e6b2bbac7ed/1472060351420/balto_rowhouse-224442.jpg?format=1500w');
-    background-repeat: no-repeat;
-}
-form {
-    width: auto;
-    margin: 0,auto;
+    background-color: cornflowerblue;
 }
